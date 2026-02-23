@@ -1,4 +1,4 @@
-NAME = clap
+NAME = scav
 
 CXX = c++
 
@@ -6,7 +6,7 @@ CXXFLAGS = -Wall -Wextra -Werror -MD -std=c++98
 
 BIN = bin/
 			
-SRC =	main.cpp ClapTrap.cpp	\
+SRC =	main.cpp ClapTrap.cpp ScavTrap.cpp	\
 
 OBJ = $(SRC: .cpp=.o)
 OBJ := $(addprefix $(BIN), $(SRC:.cpp=.o))

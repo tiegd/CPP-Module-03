@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 09:35:20 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/02/23 14:41:16 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/02/23 17:15:55 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 class	ClapTrap
 {
-	private:
+	protected:
 		std::string	_name;
 		int			_hit;
 		int			_energy;
