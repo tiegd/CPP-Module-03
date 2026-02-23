@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 09:35:30 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/02/23 17:13:10 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/02/23 17:44:37 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,22 @@ int	main()
 	// ClapTrap	clap;
 	ScavTrap	scav("enchevri");
 
+	clap.status();
 	scav.status();
+	
 	scav.attack("sithomas");
 	scav.status();
-	scav.takeDamage(3);
-	// clap.status();
-	// clap.attack("jweber");
-	// clap.status();
-	// clap.takeDamage(5);
-	// clap.status();
-	// clap.beRepaired(7);
-	// clap.status();
-	// clap.takeDamage(10);
-	// clap.status();
-	// clap.attack("abetemps");
-	// clap.status();
+	scav.takeDamage(30);
+	scav.attack("jweber");
+	scav.status();
+	scav.takeDamage(50);
+	scav.status();
+	scav.beRepaired(70);
+	scav.status();
+	scav.takeDamage(100);
+	scav.status();
+	scav.attack("abetemps");
+	scav.status();
 	scav.guardGate();
 	return (0);
 }

@@ -13,12 +13,12 @@
 
 #include <iostream>
 
-ClapTrap::ClapTrap() : _name("<name>"), _hit(100), _energy(50), _attack(20)
+ClapTrap::ClapTrap() : _name("<name>"), _hit(10), _energy(10), _attack(0)
 {
 	std::cout << "ClapTrap Default constructor called" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name) : _name(name), _hit(100), _energy(50), _attack(20)
+ClapTrap::ClapTrap(std::string name) : _name(name), _hit(10), _energy(10), _attack(0)
 {
 	std::cout << "ClapTrap Parameterized constructor called" << std::endl;
 }
@@ -80,5 +80,5 @@ void ClapTrap::beRepaired(unsigned int amount)
 
 void    ClapTrap::status(void)
 {
-    std::cout << "hit : " << _hit << "\nenergy : " << _energy << std::endl;
+    std::cout << "\nStatus of " << _name << "\nhit : " << _hit << "\nenergy : " << _energy << "\n" << std::endl;
 }

@@ -79,5 +79,5 @@ void ClapTrap::beRepaired(unsigned int amount)
 
 void    ClapTrap::status(void)
 {
-    std::cout << "hit : " << _hit << "\nenergy : " << _energy << std::endl;
+       std::cout << "Status of " << _name << "\nhit : " << _hit << "\nenergy : " << _energy << std::endl;
 }

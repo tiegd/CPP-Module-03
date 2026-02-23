@@ -16,11 +16,19 @@
 
 ScavTrap::ScavTrap()
 {
+    _name = "<name>";
+    _hit = 100;
+    _energy = 50;
+    _attack = 20;
 	std::cout << "ScavTrap Default constructor called" << std::endl;
 }
 
 ScavTrap::ScavTrap(const std::string name) : ClapTrap(name)
 {
+    _name = name;
+    _hit = 100;
+    _energy = 50;
+    _attack = 20;
 	std::cout << "ScavTrap Parameterized constructor called" << std::endl;
 }
 
@@ -42,5 +50,5 @@ void ScavTrap::attack(const std::string &target)
 
 void ScavTrap::guardGate()
 {
-    std::cout << "ScavTrap is now in Gate keeper mode !" << std::endl;
+    std::cout << "ScavTrap is now in Gate keeper mode !\n" << std::endl;
 }
