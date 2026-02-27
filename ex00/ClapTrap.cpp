@@ -1,4 +1,3 @@
-#include "ClapTrap.hpp"
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,10 +6,11 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 09:35:10 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/02/23 09:35:11 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/02/27 13:52:51 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ClapTrap.hpp"
 #include <iostream>
 
 ClapTrap::ClapTrap() : _name("<name>"), _hit(10), _energy(10), _attack(0)

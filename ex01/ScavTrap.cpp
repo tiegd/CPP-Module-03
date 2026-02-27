@@ -1,4 +1,3 @@
-#include "ScavTrap.hpp"
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,12 +6,12 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 14:28:56 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/02/23 14:29:03 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/02/27 13:52:15 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "ScavTrap.hpp"
+#include <iostream>
 
 ScavTrap::ScavTrap()
 {
@@ -23,6 +22,30 @@ ScavTrap::ScavTrap()
 	std::cout << "ScavTrap Default constructor called" << std::endl;
 }
 
+ScavTrap::ScavTrap(const ScavTrap &obj)
+{
+	std::cout << "ScavTrap Copy constructor called" << std::endl;
+    *this = obj;
+}
+
+ScavTrap &ScavTrap::operator=(const ScavTrap &obj)
+{
+    std::cout << "ScavTrap Copy assignment operator called" << std::endl;
+	if (this != &obj)
+	{
+		this->_name = obj._name;
+		this->_hit = obj._hit;
+		this->_energy = obj._energy;
+		this->_attack = obj._attack;
+	}
+	return (*this);
+}
+
+ScavTrap::~ScavTrap()
+{
+	std::cout << "ScavTrap Destructor called" << std::endl;
+}
+
 ScavTrap::ScavTrap(const std::string name) : ClapTrap(name)
 {
     _name = name;
@@ -30,11 +53,6 @@ ScavTrap::ScavTrap(const std::string name) : ClapTrap(name)
     _energy = 50;
     _attack = 20;
 	std::cout << "ScavTrap Parameterized constructor called" << std::endl;
-}
-
-ScavTrap::~ScavTrap()
-{
-	std::cout << "ScavTrap Destructor called" << std::endl;
 }
 
 void ScavTrap::attack(const std::string &target)

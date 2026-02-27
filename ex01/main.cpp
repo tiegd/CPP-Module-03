@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 09:35:30 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/02/23 17:44:37 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/02/24 12:58:05 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 int	main()
 {
 	ClapTrap	clap("jpiquet");
-	// ClapTrap	clap;
 	ScavTrap	scav("enchevri");
 
 	clap.status();

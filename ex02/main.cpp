@@ -6,18 +6,21 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 09:35:30 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/02/23 18:12:31 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/02/27 12:45:31 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include "FragTrap.hpp"
+#include <iostream>
 
 int	main()
 {
 	ClapTrap	clap("jpiquet");
-	// ClapTrap	clap;
+	std::cout << "-------------------------------" << std::endl;
 	FragTrap	frag("enchevri");
+	std::cout << "-------------------------------" << std::endl;
+	FragTrap	cpy(frag);
 
 	clap.status();
 	frag.status();

@@ -1,4 +1,3 @@
-#include "ClapTrap.hpp"
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,10 +6,11 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 09:35:10 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/02/23 09:35:11 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/02/27 13:53:00 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ClapTrap.hpp"
 #include <iostream>
 
 ClapTrap::ClapTrap() : _name("<name>"), _hit(10), _energy(10), _attack(0)
@@ -31,7 +31,7 @@ ClapTrap::ClapTrap(const ClapTrap &obj)
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &obj)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
+	std::cout << "ClapTrap Copy assignment operator called" << std::endl;
     if (this != &obj)
     {
         this->_name = obj._name;
